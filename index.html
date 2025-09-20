@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Invitation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="welcome-screen" id="welcomeScreen">
+        <div class="card fade-in">
+            <h1 class="card-title">You're Invited</h1>
+            <p class="card-subtitle">Please enter the private code to continue.</p>
+            <div class="input-container">
+                <input type="password" id="codeInput" placeholder="Enter code">
+                <button class="btn" id="continueButton">
+                    <span class="btn-text">Unlock</span>
+                </button>
+            </div>
+            <p id="errorMessage" class="error-message"></p>
+        </div>
+    </div>
+    
+    <div class="invitation-screen hidden" id="invitationScreen">
+        <img src="c1.png" alt="Decoration" class="sticker top-left">
+        <img src="c2.png" alt="Decoration" class="sticker top-right">
+        <img src="c3.png" alt="Decoration" class="sticker bottom-left">
+        <img src="c4.png" alt="Decoration" class="sticker bottom-right">
+
+        <div class="invitation-content-wrapper">
+            <div class="video-container">
+                <video id="weddingVideo" muted playsinline>
+                    <source src="Weeding.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-overlay" id="videoOverlay">
+                    <div class="click-to-play">
+                        <p class="click-text">Click to reveal</p>
+                        <div class="click-line"></div>
+                    </div>
+                </div>
+            </div>
+            <img id="staticInvitationBanner" src="static.png" alt="Wedding Invitation" class="hidden static-banner">
+            
+            <div class="content fade-in hidden" id="mainContentText"> 
+                <h2 class="content-title">Jane & John</h2>
+                <p class="content-text">request the pleasure of your company</p>
+                <p class="content-details">November 15, 2025</p>
+                <p class="content-details">The Grand Hall</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-button-container hidden" id="bottomButtonContainer">
+        <a href="invitation_letter.html" class="btn bottom-btn">View the Invitation</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
