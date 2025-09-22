@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const bottomButtonContainer = document.getElementById('bottomButtonContainer');
 
     // ✅ Multiple valid codes
-    const secretCodes = ["HAPPY2025", "RERATUL_BSL", "JOBAYER_BSL", "LHK2025", "MOTI_DHK","ORITRO_DHK","CAKE_MASTER_SIAM","RAYHAN_BSL","HEMEL_DHK","SIFAT_BSL"];
+    const secretCodes = ["HAPPY2025", "RERATUL_BSL", "JOBAYER_BSL", "LHK2025", "MOTI_DHK","ORITRO_DHK","CAKE_MASTER_SIAM","RAYHAN_BSL","HEMEL_DHK","SIFAT_BSL","TEST"];
 
     let playCount = 1;
     const maxPlays = 2;
@@ -80,3 +80,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
